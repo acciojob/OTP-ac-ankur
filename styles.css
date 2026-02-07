@@ -1,1 +1,77 @@
 /*  your css code here. If applicable */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin: 0;
+}
+
+/* Main container */
+body > div {
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 40px 50px;
+  width: 650px;
+  text-align: center;
+}
+
+/* Heading */
+#verification_heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Subtext */
+#verification_subtext {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* OTP container */
+.code-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* OTP inputs */
+.code {
+  width: 60px;
+  height: 80px;
+  font-size: 36px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Focus state */
+.code:focus {
+  border-color: #000;
+}
+
+/* Remove number arrows (in case browser converts type) */
+.code::-webkit-inner-spin-button,
+.code::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Footer info (optional – matches image hint text) */
+.info {
+  margin-top: 25px;
+  padding: 12px;
+  background: #f1f1f1;
+  color: #888;
+  font-size: 12px;
+  border-radius: 6px;
+}
